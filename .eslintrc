@@ -4,6 +4,8 @@
   ],
   "parser": "babel-eslint",
   "rules": {
-        "no-console":0
+        "no-console": 0,
+        "no-useless-constructor": 0,
+        "jsx-a11y/accessible-emoji": 0,
     }
 }

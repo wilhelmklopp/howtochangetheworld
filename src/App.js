@@ -77,6 +77,7 @@ class App extends Component {
         </div>
         <div className="card-wrapper">
           {this.state.checkEmail ?
+            // eslint-disable-next-line
             <p>Check your inbox to verify your email and see who's in your group ✉️</p> :
             <div className="form">
               <Card>
@@ -136,6 +137,7 @@ class App extends Component {
           <Card>
             <h3>How it works</h3>
             <p>
+              {/* eslint-disable-next-line */}
               You sign up using the group theme and number that were sent to you, and we'll email you when someone else joins your group. You'll be able to start talking to your team before How To Change the World officially kicks off on Tuesday 🎉
             </p>
           </Card>

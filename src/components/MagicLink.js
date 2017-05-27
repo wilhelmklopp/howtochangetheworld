@@ -6,6 +6,7 @@ const API_DOMAIN = 'https://hwtctw.herokuapp.com/api';
 const cookies = new Cookies();
 
 class MagicLink extends Component {
+  // eslint-disable-next-line
   constructor(props) {
     super(props);
   }
