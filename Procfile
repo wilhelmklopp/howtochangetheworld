@@ -1,1 +1,1 @@
-web: gunicorn server/htctwserver.wsgi
+web: gunicorn --pythonpath server htctwserver.wsgi
