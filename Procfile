@@ -1,1 +1,1 @@
-web gunicorn server/htctwserver.wsgi
+web: gunicorn server/htctwserver.wsgi
