@@ -1,0 +1,20 @@
+.Group {
+  /*max-width: 600px;
+  display: flex;
+  justify-content: center;
+  text-align: center;*/
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex: auto;
+  align-items: center;
+}
+
+.card-wrapper > div{
+  padding: 20px;
+  flex-basis: auto;
+  width: 600px;
+  margin-top: 20px;
+}
