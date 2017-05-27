@@ -15,7 +15,7 @@ import { Card } from 'material-ui';
 import logo from './logo.png';
 import './MyGroup.css';
 
-const API_DOMAIN = 'http://localhost:8000/api';
+const API_DOMAIN = 'https://hwtctw.herokuapp.com/api';
 const cookies = new Cookies();
 
 class MyGroup extends Component {
