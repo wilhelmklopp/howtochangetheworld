@@ -256,8 +256,7 @@ def ml_exchange(request):
 
 def my_group(request):
     try:
-        print(request.COOKIES)
-        access_token = request.COOKIES["accessToken"]
+        access_token = request.GET["access_token"]
     except KeyError:
         response = JsonResponse({
             "ok": False,

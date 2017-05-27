@@ -31,9 +31,9 @@ class MyGroup extends Component {
     if (accessToken) {
       cookies.set('accessToken', accessToken, { path: '/' });
     }
-    fetch(`${API_DOMAIN}/my_group/`, {
+    const storedAccessToken = cookies.get('accessToken');
+    fetch(`${API_DOMAIN}/my_group/?access_token${storedAccessToken}`, {
       method: 'GET',
-      credentials: 'include',
     })
     .then(response => response.json())
     .then((json) => {
