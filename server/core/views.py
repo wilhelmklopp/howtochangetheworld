@@ -33,7 +33,7 @@ def is_email_valid(email):
 
 def notify_group_members(group, new_joiner):
     for member in group.user_set.all():
-        if member != new_joiner:
+        if member != new_joiner and member.confirmed:
             postmark.emails.send_with_template(
                 TemplateId=1943602,
                 TemplateModel={
@@ -282,7 +282,7 @@ def my_group(request):
                 "name": member.name,
                 "course": member.course,
                 "email": member.email
-            } for member in group.user_set.all()
+            } for member in group.user_set.all() if member.confirmed
         ]
     })
     response.status_code = 200
