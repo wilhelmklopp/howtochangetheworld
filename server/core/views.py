@@ -37,7 +37,8 @@ def notify_group_members(group, new_joiner):
             postmark.emails.send_with_template(
                 TemplateId=1943602,
                 TemplateModel={
-                    "action_url": "{}{}{}".format(
+                    "action_url": "{}{}{}{}".format(
+                        "https://",
                         os.environ["DOMAIN"],
                         "/group?access_token=",
                         member.access_token
@@ -138,7 +139,8 @@ def signup(request):
         TemplateId=1943101,
         TemplateModel={
             "name": name,
-            "action_url": "{}{}{}".format(
+            "action_url": "{}{}{}{}".format(
+                "https://",
                 os.environ["DOMAIN"],
                 "/ml/",
                 str(new_magic_link.link)
@@ -188,7 +190,8 @@ def signin_request(request):
     postmark.emails.send_with_template(
         TemplateId=1943262,
         TemplateModel={
-            "action_url": "{}{}{}".format(
+            "action_url": "{}{}{}{}".format(
+                "https://",
                 os.environ["DOMAIN"],
                 "/ml/",
                 str(new_magic_link.link)
