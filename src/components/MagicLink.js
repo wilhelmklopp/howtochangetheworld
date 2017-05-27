@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Cookies from 'universal-cookie';
 import { browserHistory } from 'react-router';
 
-const API_DOMAIN = 'https://hwtctw.herokuapp.com/api';
+const API_DOMAIN = 'https://htctw-server.herokuapp.com/api';
 const cookies = new Cookies();
 
 class MagicLink extends Component {

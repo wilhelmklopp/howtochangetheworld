@@ -6,7 +6,7 @@ import { browserHistory } from 'react-router';
 import logo from './logo.svg';
 import './App.css';
 
-const API_DOMAIN = 'https://hwtctw.herokuapp.com/api';
+const API_DOMAIN = 'https://htctw-server.herokuapp.com/api';
 const cookies = new Cookies();
 
 class App extends Component {
