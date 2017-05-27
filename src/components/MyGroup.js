@@ -32,7 +32,7 @@ class MyGroup extends Component {
       cookies.set('accessToken', accessToken, { path: '/' });
     }
     const storedAccessToken = cookies.get('accessToken');
-    fetch(`${API_DOMAIN}/my_group/?access_token${storedAccessToken}`, {
+    fetch(`${API_DOMAIN}/my_group/?access_token=${storedAccessToken}`, {
       method: 'GET',
     })
     .then(response => response.json())
