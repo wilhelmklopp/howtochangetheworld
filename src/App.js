@@ -122,6 +122,7 @@ class App extends Component {
                   value={this.state.groupNumber}
                   onChange={(event) => { this.setState({ groupNumber: event.target.value }); }}
                 />
+                <div className="g-recaptcha" data-sitekey="6LeIJSMUAAAAAMK9GLpVWfnP-6aplKZnvDsdQYiR"></div>
                 <RaisedButton label="Sign Up" primary onTouchTap={this.onSubmit} style={{ margin: '20px 0' }} />
                 <Snackbar
                   open={this.state.error}
